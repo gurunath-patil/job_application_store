@@ -1,0 +1,20 @@
+{
+	"manifest_version": 3,
+	"name": "Job Application Checker",
+	"version": "0.0.1",
+	"description": "Check if you Apply for An Job Already!",
+	"permissions": ["storage", "tabs", "activeTab"],
+	"action": {
+		"default_popup": "index.html",
+		"default_title": "Job Application Checker"
+	},
+	"icons": {
+		"128": "./logo.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["jquery.min.js", "script.js"]
+		}
+	]
+}

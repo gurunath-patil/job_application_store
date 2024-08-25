@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+#body-box{
+    width: 550px;
+    height: 360px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#all-boxs-main-box{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+}
+
+#top-bar{
+    display: grid;
+    grid-template-columns: 14% 68% 20%;
+    justify-content: center;
+    padding: 2px;
+    background-color: #7E64CB;
+    color: white;
+}
+
+.item-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-btn-container{
+    cursor: pointer;
+}
+
+/* all card style */
+
+#main-card-box{
+    height: 63vh;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 1rem;
+    margin: 1rem 1rem 0px 1rem;
+    overflow: scroll;
+}
+
+.card-box{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 25% 25% 25% 25%;
+    row-gap: 2px;
+    padding: 3%;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    background-color: #E9C1C1;
+    height: 9rem;
+}
+
+.date-box{
+  padding: 0px;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.date-box > span{
+    margin: 10px;
+}
+
+.card-box > div{
+    display: flex;
+    width: 125% !important;
+  justify-content: space-between;
+}
+
+.card-box :nth-child(2){
+    margin-top: 2px;
+}
+
+/* .font-responsive{
+    font-size: 2em;
+} */
+
+/* serach box row start */
+
+#main-search-box{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+}
+
+
+
+/* add page style */
+
+#outer-box{
+    width: 100% !important;
+    height: 83% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-box{
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    background-color: #455A64;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+
+#job-title-box{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1 /2;
+    align-content: center;
+}
+
+#job-title{
+    width: 80%;
+}
+
+#experience-box{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2 /3;
+    align-content: center;
+}
+
+
+#job-url-box{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2 /3;
+    align-content: center;
+    justify-self: center;
+}
+
+#job-url{
+    width: 12rem;
+}
+#add-New-Job-box{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    align-content: center;
+    justify-self: center;
+}
+
+#add-New-Job{
+    width: 24rem;
+}
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add New Job</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	</head>
+	<body id="body-box">
+		<div id="top-bar">
+			<div class="d-flex justify-content-center p-1">
+				<i class="bi bi-building-fill h1"></i>
+			</div>
+			<div class="d-flex align-items-cenetr p-1">
+				<h2>New Company</h2>
+			</div>
+			<div class="d-flex align-items-center justify-content-end pe-3">
+				<button class="btn" id="back-btn">
+					<i class="bi bi-arrow-left-circle h1 text-light"></i>
+				</button>
+			</div>
+		</div>
+
+		<div id="outer-box">
+			<div id="inner-box">
+					<div id="job-title-box">
+						<input type="text" class="form-control" id="job-title" placeholder="Profile" />
+					</div>
+					<div id="experience-box">
+						<input type="text" class="form-control" id="experience" placeholder="Expirence" />
+					</div>
+					<div id="job-url-box">
+						<select name="jobURL" id="job-url" class="form-select">
+						</select>
+					</div>
+					<div id="add-New-Job-box">
+						<button type="submit" class="btn btn-primary" id="add-New-Job">Add</button>
+					</div>
+			</div>
+		</div>
+
+		<script src="./jquery.min.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
